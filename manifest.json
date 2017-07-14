@@ -9,11 +9,6 @@
         },
         "default_title": "Smart Calculator",
         "default_popup": "calc.html"
-    },
-
-    "background":{
-        "scripts":["background.js"],
-        "persistant": false
     }
 }
 
