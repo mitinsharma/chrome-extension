@@ -1,4 +1,46 @@
-<script type="text/javascript" src="script.js"></script>
-<div style="width:200px">
-    <button id="button">Color all the divs</button>
-</div>
+<html ng-app="myModule">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="box" ng-controller="myController">
+        <div class="display">
+            <input type="text" class="textbox"  ng-model="ldisplay" value="0" disabled>
+        </div>
+        <div class="input-field">
+            <div class="keypad">
+                <div class="list op" ng-click="tap_num(0)">-</div>
+                <div class="list op" ng-click="tap_num(0)">-</div>
+                <div class="list op" ng-click="tap_num(0)">-</div>
+                <div class="list op" ng-click="tap_num('/')">/</div>
+
+                <div class="list" ng-click="tap_num(7)">7</div>
+                <div class="list" ng-click="tap_num(8)">8</div>
+                <div class="list" ng-click="tap_num(9)">9</div>
+                <div class="list op" ng-click="tap_num('*')">x</div>
+
+                <div class="list" ng-click="tap_num(4)">4</div>
+                <div class="list" ng-click="tap_num(5)">5</div>
+                <div class="list" ng-click="tap_num(6)">6</div>
+                <div class="list op" ng-click="tap_num('-')">-</div>
+
+                <div class="list" ng-click="tap_num(3)">3</div>
+                <div class="list" ng-click="tap_num(2)">2</div>
+                <div class="list" ng-click="tap_num(1)">1</div>
+                <div class="list op" ng-click="tap_num('+')">+</div>
+
+                <div class="list" ng-click="tap_num(0)">0</div>
+                <div class="list" ng-click="tap_num('.')">.</div>
+                <div class="list" ng-click="tap_num('c')">c</div>
+                <div class="list op" ng-click="tap_num('=')">=</div>
+                <div class="clear"></div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
