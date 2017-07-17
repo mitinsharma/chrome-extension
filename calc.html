@@ -9,13 +9,13 @@
 <body>
     <div class="box" ng-controller="myController">
         <div class="display">
-            <input type="text" class="textbox"  ng-model="ldisplay" value="0" disabled>
+            <input type="text" class="textbox"  ng-model="ldisplay" disabled>
         </div>
         <div class="input-field">
             <div class="keypad">
-                <div class="list op" ng-click="tap_num(0)">-</div>
-                <div class="list op" ng-click="tap_num(0)">-</div>
-                <div class="list op" ng-click="tap_num(0)">-</div>
+                <div class="list op" ng-click="tap_num('x')"></div>
+                <div class="list op" ng-click="tap_num('x')"></div>
+                <div class="list op" ng-click="tap_num('x')"></div>
                 <div class="list op" ng-click="tap_num('/')">/</div>
 
                 <div class="list" ng-click="tap_num(7)">7</div>
